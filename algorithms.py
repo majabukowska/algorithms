@@ -51,18 +51,6 @@ def quick_sort(arr):
     return quick_sort(smaller_numbers) + [pivot] + quick_sort(greater_numbers)
 
 
-# INSERTION SORT
-
-def insertion_sort(arr):
-    length = len(arr)
-
-    for i in range(1, length):
-        while arr[i - 1] > arr[i] and i > 0:
-            arr[i - 1], arr[i] = arr[i], arr[i - 1]
-            i -= 1
-
-    return arr
-
 # COUNTING SORT
 
 def counting_sort(arr):
